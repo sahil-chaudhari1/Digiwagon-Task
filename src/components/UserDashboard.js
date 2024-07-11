@@ -3,7 +3,7 @@ import { Button, Box, TextField, Snackbar, IconButton } from '@mui/material';
 import { Formik, Field, Form, FieldArray } from 'formik';
 import * as Yup from 'yup';
 import CloseIcon from '@mui/icons-material/Close';
-import '../Style/UserDashboard.css'; // Updated path
+import '../Style/UserDashboard.css'; 
 
 const validationSchema = Yup.object({
   productName: Yup.string().required('Required'),
