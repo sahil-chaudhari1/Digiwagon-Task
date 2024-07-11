@@ -11,3 +11,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.MaterialForm {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  max-width: 600px; /* Adjust width as needed */
+  width: 100%;
+}
+
+.MaterialForm:hover {
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.388);
+}
+
+.center-align {
+  text-align: center;
+}

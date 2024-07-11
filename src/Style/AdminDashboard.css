@@ -1,0 +1,64 @@
+.admin-dashboard {
+  padding: 20px;
+}
+
+.dashboard-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.table-container {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th, .admin-table td {
+  border: 1px solid #e0e0e0;
+  padding: 12px;
+  text-align: left;
+}
+
+.admin-table th {
+  background-color: #f5f5f5;
+  color: #333;
+  font-weight: bold;
+}
+
+.admin-table tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.admin-table tbody tr:nth-child(odd) {
+  background-color: #f0f8ff; /* Light blue color for odd rows */
+}
+
+.variants-column {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* spacing between variants */
+}
+
+.variant-item {
+  padding: 4px 8px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.variant-name {
+  font-weight: bold;
+  color: #555;
+}
+
+.no-data-msg {
+  text-align: center;
+  font-size: 18px;
+  color: #999;
+  margin-top: 20px;
+}

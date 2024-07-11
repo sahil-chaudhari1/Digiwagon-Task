@@ -1,0 +1,21 @@
+    /* UserDashboard.css */
+.MaterialForm {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .variant-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .variant-row .MuiTextField-root {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .remove-icon {
+    cursor: pointer;
+  }
+  
