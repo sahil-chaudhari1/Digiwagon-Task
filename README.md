@@ -63,12 +63,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 ### Deployment
 
-| Page             | Image                                                                                     |
-|------------------|-------------------------------------------------------------------------------------------|
-| Login Page       | <img src="https://github.com/sahil-chaudhari1/Enduro/assets/105918795/411ec3a4-31c1-4ad0-b259-9f38095e43cc" width="200">          |
-| Registration Page | <img src="https://github.com/sahil-chaudhari1/Enduro/assets/105918795/22834554-b405-4d41-b22a-4b3383f09da5" width="200">        |
-| Home Page        | <img src="https://github.com/sahil-chaudhari1/Enduro/assets/105918795/a6e98f8b-7cea-45fc-b7ad-58ae35ce2446" width="200">          |
-| Buy Page         | <img src="https://github.com/sahil-chaudhari1/Enduro/assets/105918795/3a33f389-1d78-4ef6-9d72-ef0048b805b2" width="200">          |
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
