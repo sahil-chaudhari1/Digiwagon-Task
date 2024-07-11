@@ -20,13 +20,13 @@ function MaterialForm() {
 
   const handleFormSubmit = values => {
     if (values.role === 'Admin' && values.email === 'sahilchaudhari162@gmail.com' && values.password === 'sahil@0001') {
-      localStorage.setItem('user', JSON.stringify(values)); // Store user data in localStorage
-      window.location.href = '/admin-dashboard'; // Redirect to admin dashboard
+      localStorage.setItem('user', JSON.stringify(values)); 
+      window.location.href = '/admin-dashboard'; 
     } else if (values.role === 'User') {
-      localStorage.setItem('user', JSON.stringify(values)); // Store user data in localStorage
-      window.location.href = '/user-dashboard'; // Redirect to user dashboard
+      localStorage.setItem('user', JSON.stringify(values)); 
+      window.location.href = '/user-dashboard'; 
     } else {
-      setLoginError(true); // Display login error if credentials don't match
+      setLoginError(true); 
     }
   };
 
