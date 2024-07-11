@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Style/AdminDashboard.css'; // Ensure this path is correct
+import '../Style/AdminDashboard.css'; 
 
 function AdminDashboard() {
   const formData = JSON.parse(localStorage.getItem('formData')) || [];
