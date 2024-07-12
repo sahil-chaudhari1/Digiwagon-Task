@@ -19,6 +19,7 @@ function MaterialForm() {
   };
 
   const handleFormSubmit = values => {
+<<<<<<< HEAD
     if (values.role === 'Admin') {
       if (values.email === 'sahilchaudhari162@gmail.com' && values.password === 'sahil@0001') {
         localStorage.setItem('user', JSON.stringify(values)); // Store user data in localStorage
@@ -26,11 +27,16 @@ function MaterialForm() {
       } else {
         setLoginError(true); // Display login error if credentials don't match
       }
+=======
+    if (values.role === 'Admin' && values.email === 'sahilchaudhari162@gmail.com' && values.password === 'sahil@0001') {
+      localStorage.setItem('user', JSON.stringify(values)); 
+      window.location.href = '/admin-dashboard'; 
+>>>>>>> 746f011fd50c691f41b44463dd33fcc1a64ec0ca
     } else if (values.role === 'User') {
-      localStorage.setItem('user', JSON.stringify(values)); // Store user data in localStorage
-      window.location.href = '/user-dashboard'; // Redirect to user dashboard
+      localStorage.setItem('user', JSON.stringify(values)); 
+      window.location.href = '/user-dashboard'; 
     } else {
-      setLoginError(true); // Display login error if credentials don't match
+      setLoginError(true); 
     }
   };
 
