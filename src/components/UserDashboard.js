@@ -3,11 +3,7 @@ import { Button, Box, TextField, Snackbar, IconButton } from '@mui/material';
 import { Formik, Field, Form, FieldArray } from 'formik';
 import * as Yup from 'yup';
 import CloseIcon from '@mui/icons-material/Close';
-<<<<<<< HEAD
-import '../Style/UserDashboard.css';
-=======
-import '../Style/UserDashboard.css'; 
->>>>>>> 746f011fd50c691f41b44463dd33fcc1a64ec0ca
+import '../Style/UserDashboard.css'; // Ensure this import is correct without conflict markers
 
 const validationSchema = Yup.object({
   productName: Yup.string().required('Required'),
@@ -106,4 +102,5 @@ function UserDashboard() {
 }
 
 export default UserDashboard;
+
 
