@@ -19,9 +19,13 @@ function MaterialForm() {
   };
 
   const handleFormSubmit = values => {
-    if (values.role === 'Admin' && values.email === 'sahilchaudhari162@gmail.com' && values.password === 'sahil@0001') {
-      localStorage.setItem('user', JSON.stringify(values)); // Store user data in localStorage
-      window.location.href = '/admin-dashboard'; // Redirect to admin dashboard
+    if (values.role === 'Admin') {
+      if (values.email === 'sahilchaudhari162@gmail.com' && values.password === 'sahil@0001') {
+        localStorage.setItem('user', JSON.stringify(values)); // Store user data in localStorage
+        window.location.href = '/admin-dashboard'; // Redirect to admin dashboard
+      } else {
+        setLoginError(true); // Display login error if credentials don't match
+      }
     } else if (values.role === 'User') {
       localStorage.setItem('user', JSON.stringify(values)); // Store user data in localStorage
       window.location.href = '/user-dashboard'; // Redirect to user dashboard
@@ -102,3 +106,4 @@ function MaterialForm() {
 }
 
 export default MaterialForm;
+

@@ -3,7 +3,7 @@ import { Button, Box, TextField, Snackbar, IconButton } from '@mui/material';
 import { Formik, Field, Form, FieldArray } from 'formik';
 import * as Yup from 'yup';
 import CloseIcon from '@mui/icons-material/Close';
-import '../Style/UserDashboard.css'; // Updated path
+import '../Style/UserDashboard.css';
 
 const validationSchema = Yup.object({
   productName: Yup.string().required('Required'),
@@ -19,17 +19,18 @@ const validationSchema = Yup.object({
 function UserDashboard() {
   const [showAlert, setShowAlert] = useState(false);
 
-  const handleFormSubmit = (values) => {
+  const handleFormSubmit = (values, { resetForm }) => {
     const existingData = JSON.parse(localStorage.getItem('formData')) || [];
     existingData.push(values);
     localStorage.setItem('formData', JSON.stringify(existingData));
     setShowAlert(true);
     setTimeout(() => setShowAlert(false), 3000);
+    resetForm();
   };
 
   return (
     <div>
-        <h1 style={{ textAlign: 'center' }}>User Dashboard</h1>
+      <h1 style={{ textAlign: 'center' }}>User Dashboard</h1>
       <Formik
         initialValues={{ productName: '', productDescription: '', variants: [{ variantName: '', variantAmount: '' }] }}
         validationSchema={validationSchema}
@@ -101,3 +102,4 @@ function UserDashboard() {
 }
 
 export default UserDashboard;
+

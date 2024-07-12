@@ -1,16 +1,17 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MaterialForm from './components/MaterialForm';
 import UserDashboard from './components/UserDashboard';
 import AdminDashboard from './components/AdminDashboard';
+import ProtectedRoute from './ProtectedRoute';
 
 function App() {
-  return (  
+  return (
     <Router>
       <Routes>
         <Route path="/" element={<MaterialForm />} />
-        <Route path="/user-dashboard" element={<UserDashboard />} />
-        <Route path="/admin-dashboard" element={<AdminDashboard />} />
+        <Route path="/user-dashboard" element={<ProtectedRoute component={UserDashboard} allowedRole="User" />} />
+        <Route path="/admin-dashboard" element={<ProtectedRoute component={AdminDashboard} allowedRole="Admin" />} />
       </Routes>
     </Router>
   );
