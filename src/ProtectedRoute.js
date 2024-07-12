@@ -1,5 +1,5 @@
-/* to restrict direct nevigation from admin to admin-dashboard without login using URL, similaraly from admin-dashboard to user-dashboard and
- user-dashboard to admin-dashboard this file is created.*/
+/* to restrict direct navigation from admin page to admin-dashboard page without login similarly from admin-dashboard to user-dashboard and
+ user-dashboard to admin-dashboard, this file is created.*/
 
 import React from 'react';
 import { Navigate } from 'react-router-dom';
